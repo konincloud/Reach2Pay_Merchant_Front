@@ -1,0 +1,115 @@
+.faq-page {
+  .right-col {
+    img {
+      @include media-lg {
+        height: 400px;
+      }
+    }
+  }
+  .accordion {
+    .accordion-item {
+      border: 0;
+      position: relative;
+      .accordion-button {
+        [dir="rtl"] & {
+          text-align: right;
+          @include media-sm {
+            font-size: 0.8rem;
+            padding-left: 40px;
+          }
+        }
+        line-height: 1.7;
+        transition: 0.3s;
+        &::after {
+          font-family: "remixicon";
+          background-image: none;
+          content: "\ea13";
+          color: #000;
+          font-weight: 300;
+          font-size: 1.2rem !important;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          transition: 0.3s;
+          @include media-lg {
+            font-size: 2rem;
+          }
+          [dir="rtl"] & {
+            left: 0;
+            right: auto;
+          }
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &.collapsed {
+          color: #000;
+          [dir="rtl"] & {
+            text-align: right;
+            @include media-sm {
+              font-size: 0.8rem;
+              padding-left: 40px;
+            }
+          }
+        }
+        &:not(.collapsed) {
+          background: #fff;
+          color: #000;
+          &::after {
+            content: "\eb99";
+            color: #d81923;
+          }
+        }
+      }
+      border-bottom: 2px solid rgba(216, 25, 35, 0.05);
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 2px;
+        background: #d8192310;
+        z-index: 1;
+        animation: progress2 5s ease-in-out infinite alternate-reverse;
+        [dir="rtl"] & {
+          right: 0;
+          left: auto;
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .accordion-body {
+      [dir="rtl"] & {
+        @include media-sm {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}

@@ -1,0 +1,51 @@
+.language-page {
+  .card {
+    .btn {
+      position: relative;
+      span {
+        color: #000;
+      }
+      &:hover {
+        border-color: $main-color !important;
+      }
+      &::after {
+        content: "\eb7b";
+        font-family: "remixicon";
+        font-size: 1.3rem;
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $white;
+        visibility: hidden;
+        opacity: 0;
+        [dir="rtl"] & {
+          left: 13px;
+          right: auto;
+        }
+      }
+      &.active {
+        background: $main-color;
+        border-color: $main-color;
+        span {
+          color: #fff;
+        }
+        &:hover {
+          background: $main-color !important;
+          border-color: $main-color !important;
+          span {
+            color: #fff;
+          }
+        }
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      img {
+        border: 1px solid rgba(255, 255, 255, 0.356);
+        border-radius: 50%;
+      }
+    }
+  }
+}

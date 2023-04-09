@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../assets/css/main.css">
+     <link rel="stylesheet" href="../../assets/css/components/prop.css">
+     <!-- <link rel="stylesheet" href="../../assets/css/components/prop-rtl.css"> -->
+     <title>Auth</title>
+</head>
+
+<body>
+     <main>
+          <div class="auth-page d-flex h100vh">
+               <div class="container d-flex flex-center">
+                    <div
+                         class="d-flex align-items-center flex-center flex-column gap-5 flex-column-fluid p-t40 p-b40 pb-lg-20 w-100">
+                         <!--begin::Logo-->
+                         <a href="#" class="m-b20">
+                              <img alt="Logo" src="../../assets/images/logo.png" class="h60">
+                         </a>
+                         <!--end::Logo-->
+                         <!--begin::Wrapper-->
+                         <div class="bg-body rounded p-10 form-shadow mx-auto w-lg-500 w-sm-100">
+                              <!--begin::Form-->
+                              <form class="form w-100 p-a20 auth-steps active sign-up durations2" id="step-1"
+                                   action="#">
+                                   <!--begin::Heading-->
+                                   <div class="text-center mb-10">
+                                        <!--begin::Title-->
+                                        <h1 class="text-dark mb-3 font-35 fw6">Sign Up</h1>
+                                        <!--end::Title-->
+                                   </div>
+                                   <!--begin::Heading-->
+                                   <!--begin::Input group-->
+                                   <div class="fv-row m-b10">
+                                        <!--begin::Label-->
+                                        <label class="form-label fs-6 fw-bolder text-dark">Email</label>
+                                        <!--end::Label-->
+                                        <!--begin::Input-->
+                                        <div class="relative">
+                                             <input
+                                                  class="form-control input-shadow font-16 form-control-lg form-control-solid"
+                                                  type="email" name="email" required id="email">
+                                        </div>
+                                        <!--end::Input-->
+                                   </div>
+                                   <!--end::Input group-->
+                                   <!--begin::Input group-->
+                                   <div class="fv-row m-b10">
+                                        <!--begin::Wrapper-->
+                                        <div class="d-flex flex-stack mb-2">
+                                             <!--begin::Label-->
+                                             <label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
+                                             <!--end::Label-->
+                                        </div>
+                                        <!--end::Wrapper-->
+                                        <!--begin::Input-->
+                                        <div class="relative">
+                                             <input
+                                                  class="form-control input-shadow font-16 form-control-lg form-control-solid m-b10"
+                                                  type="password" name="password" required id="password">
+                                             <i
+                                                  class="show-password ri-eye-line absolute transform-top abs-top-50 span-gray font-17 abs-right-20 pointer"></i>
+                                             <!--end::Input-->
+                                        </div>
+                                   </div>
+                                   <div class="fv-row m-b10">
+                                        <!--begin::Wrapper-->
+                                        <div class="d-flex flex-stack mb-2">
+                                             <!--begin::Label-->
+                                             <label class="form-label fw-bolder text-dark fs-6 mb-0">Confirm
+                                                  Password</label>
+                                             <!--end::Label-->
+                                        </div>
+                                        <!--end::Wrapper-->
+                                        <!--begin::Input-->
+                                        <div class="relative">
+                                             <input
+                                                  class="form-control input-shadow font-16 form-control-lg  form-control-solid m-b10"
+                                                  type="password" name="password" id="confirm-password" required>
+                                             <i
+                                                  class="show-password ri-eye-line absolute transform-top abs-top-50 span-gray font-17 abs-right-20 pointer"></i>
+                                        </div>
+
+                                        <!--end::Input-->
+                                   </div>
+                                   <!--end::Input group-->
+                                   <!--begin::Actions-->
+                                   <div class="text-center">
+                                        <button type="button" data-step="1"
+                                             class="next btn btn-lg w-100 m-tb15 theme-btn font-17">
+                                             <span></span>
+                                             Sign Up
+                                        </button>
+                                        <span class="indicator-progress d-none">Please wait...
+                                             <span class="spinner-border spinner-border-sm align-middle ms-2">
+                                             </span>
+                                        </span>
+                                   </div>
+                                   <!--end::Actions-->
+                                   <p class="font-12">By clicking login you agree to our <a href="#"
+                                             class="text-blue">Terms & conditions</a> and
+                                        <a href="#" class="text-blue">Privacy Policy</a>
+                                   </p>
+                                   <div class="text-center">
+                                        <span class="span-gray font-15">Have account yet?</span>
+                                        <a href="./sign-in.html" class="link-primary text-blue font-15"> Sign In </a>
+                                   </div>
+                              </form>
+                              <!--end::Form-->
+                              <!--begin::Form-->
+                              <form class="form w-100 p-a20 auth-steps" id="step-2" action="#">
+                                   <!--begin::Heading-->
+                                   <div class="text-center mb-10">
+                                        <!--begin::Title-->
+                                        <h1 class="text-dark mb-3 font-30 fw6">Verification Code</h1>
+                                        <!--end::Title-->
+                                        <span
+                                             class="flex-center text-capitalize success-send-code text-c-green font-14">
+                                             <i class="ri-check-double-line m-r5"></i>
+                                             verification code has been
+                                             sent to your mobile number
+                                        </span>
+                                   </div>
+                                   <!--begin::Heading-->
+                                   <!--begin::Input group-->
+                                   <div class="fv-row m-tb20">
+                                        <!--begin::Label-->
+                                        <label class="form-label fs-6 fw-bolder text-dark">Verification Code</label>
+                                        <!--end::Label-->
+                                        <!--begin::Input-->
+                                        <div class="relative">
+                                             <input
+                                                  class="form-control input-shadow font-16 form-control-lg form-control-solid"
+                                                  type="text" name="verification" required>
+                                             <!--end::Input-->
+                                             <span class="absolute transform-top abs-top-50 abs-right-20 pointer flex flex-center resnd-pass"
+                                                  style="color:#39B8FF">
+                                                  <i class="ri-refresh-line"></i>
+                                                  <span class="m-l2 font-14">Send Again</span>
+                                             </span>
+                                        </div>
+                                   </div>
+                                   <!--end::Input group-->
+                                   <!--begin::Actions-->
+                                   <div class="text-center">
+                                        <button type="submit" onclick="location.href='../../pages/auth/sign-in.html'"
+                                             class="btn btn-lg  w-100 m-tb15 theme-btn font-17">
+                                             <span></span>
+                                             Confirm
+                                        </button>
+                                   </div>
+                              </form>
+                              <!--end::Form-->
+                         </div>
+                         <!--end::Wrapper-->
+                    </div>
+               </div>
+          </div>
+     </main>
+     <!--end::Main-->
+
+     <!--begin::preloader-->
+     <div class="preloader">
+          <div class="preloader-inner">
+               <img src="../../assets/images/logo.png" alt="Reach2Pay">
+          </div>
+     </div>
+     <!--end::preloader-->
+
+     <!--begin::Javascript-->
+     <script src="../../assets/js/jquery.min.js"></script>
+     <script src="../../assets/js/bootstrap.min.js"></script>
+     <script src="../../assets/js/scripts.bundle.js"></script>
+     <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

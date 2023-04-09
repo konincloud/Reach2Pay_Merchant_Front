@@ -1,0 +1,79 @@
+.home-page {
+  .container {
+    .transaction {
+      .card-title {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 25px;
+          padding-left: 2px;
+          height: 25px;
+          transition: 0.3s;
+          [dir="rtl"] & {
+            rotate: 180deg;
+          }
+          &:hover {
+            background: $light-gray;
+            svg {
+              color: $main-color;
+            }
+          }
+          svg {
+            color: #19224c;
+          }
+        }
+      }
+    }
+    .col_3 {
+      .card {
+        .card-body {
+          a {
+            transition: 0.3s;
+            span {
+              transition: 0.3s;
+              &:first-child {
+                &:hover {
+                  svg {
+                    transform: rotate(180deg);
+                  }
+                }
+              }
+              svg {
+                transition: 0.3s;
+              }
+            }
+            &:first-child {
+              span {
+                &:first-child {
+                  &:hover {
+                    background: rgba(0, 204, 255, 0.199) !important;
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              span {
+                &:first-child {
+                  &:hover {
+                    background: rgba(255, 17, 0, 0.199) !important;
+                  }
+                }
+              }
+            }
+            &:nth-child(3) {
+              span {
+                &:first-child {
+                  &:hover {
+                    background: rgba(51, 255, 0, 0.158) !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

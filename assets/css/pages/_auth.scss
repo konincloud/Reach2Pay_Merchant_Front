@@ -1,0 +1,28 @@
+.auth-steps {
+  display: none;
+  &.active {
+    display: block;
+  }
+  .success-send-code {
+    display: none;
+  }
+}
+
+.phone-number {
+  padding-left: 59px;
+  [dir="rtl"] & {
+    padding-left: 0;
+    padding-right: 65px;
+  }
+}
+
+.number-code {
+  border-right: 1px solid #e4e6fc;
+  padding-right: 6px;
+  [dir="rtl"] & {
+    border-right: none;
+    border-left: 1px solid #e4e6fc;
+    padding-right: 0;
+    padding-left: 6px;
+  }
+}
