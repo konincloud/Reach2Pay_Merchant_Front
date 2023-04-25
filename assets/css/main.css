@@ -4580,6 +4580,10 @@ header .container {
     padding-left: 15px;
   }
 }
+header .container .logo a {
+  width: 130px;
+  display: block;
+}
 header .container .col_2 .menu-sidebar-icon {
   cursor: pointer;
   display: none;
