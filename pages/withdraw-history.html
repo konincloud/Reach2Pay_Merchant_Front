@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="stylesheet" href="../../assets/css/components/prop.css" />
-		<!-- <link rel="stylesheet" href="../../assets/css/components/prop-rtl.css"> -->
-		<title>Settings</title>
+		<!-- <link rel="stylesheet" href="../../assets/css/components/prop.css"> -->
+		<link rel="stylesheet" href="../../assets/css/components/prop-rtl.css" />
+		<title>Withdraw History</title>
 	</head>
 
 	<body class="body-bg">
@@ -149,7 +149,7 @@
 		</header>
 		<!--begin::main-->
 		<main>
-			<div class="settings-page">
+			<div class="account-statement-page">
 				<div class="container">
 					<div class="main row">
 						<!--begin::Col-->
@@ -162,7 +162,7 @@
 									</a>
 								</div>
 								<ul class="sidebar-items">
-									<li class="item active">
+									<li class="item">
 										<a href="index.html">
 											<svg
 												width="24"
@@ -302,7 +302,7 @@
 											<span class="text-nowrap">Transition</span>
 										</a>
 									</li>
-									<li class="item">
+									<li class="item active">
 										<a href="index.html">
 											<svg
 												width="18"
@@ -533,147 +533,210 @@
 							<!--end::sidebar-->
 						</div>
 						<!--end::Col-->
-						<!--end::Col-->
 						<div class="main-content col-lg-c4 col-md-12 col-sm-12">
-							<!--begin::row-->
+							<!--begin::Col-->
 							<div class="row">
-								<div class="col-12 mb-4">
+								<div class="col-lg-12 col-md-12 mb-4">
 									<div
-										class="card card-border overflow-hidden h-md-100 p-lr20 p-tb15 scaleIn durations1"
+										class="card card-border overflow-hidden h-md-100 p-a20 scaleIn durations1"
 									>
-										<!--begin::Card body-->
-										<div class="card-header px-0 pb-0 border-0 bg-white">
-											<div class="card-title">
-												<span class="text-black font-18 p-l5 fw5"
-													>Settings</span
-												>
-											</div>
-										</div>
-										<div class="card-body px-0">
-											<a
-												href="./profile.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Edit Profile</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<a
-												href="./business-account.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Business Account Details</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<a
-												href="./change-password.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Change Password</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<span
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Notifications</span>
-												<label class="switch">
-													<input type="checkbox" checked />
-													<span class="slider round"></span>
-												</label>
-											</span>
-											<span
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Two Factor Authentication</span>
-												<label class="switch">
-													<input type="checkbox" />
-													<span class="slider round"></span>
-												</label>
-											</span>
-											<a
-												href="./language.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Language</span>
-												<div class="flex flex-center gap-2">
-													<img
-														src="../assets/images/language/English.png"
-														class="w17 h17"
-														alt="english-lang"
-													/>
-													<i class="ri-arrow-right-s-line"></i>
-												</div>
-											</a>
-											<a
-												href="./saved-withdraw.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Saved Withdraw methods</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<a
-												href="./about.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">About us</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<a
-												href="privacy.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Privacy</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<a
-												href="contact.html"
-												class="flex justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Contact Us</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
+										<div class="card-header b-r8 px-0 pb-0 border-0 bg-white">
 											<div
-												data-bs-toggle="modal"
-												data-bs-target="#modal-keys"
-												class="flex cursor-pointer justify-content-between p-lr10 border-bottom-1 text-black b-r5 p-tb15 hover-bg-gray"
+												class="card-title flex flex-center gap-3 flex-lg-row flex-column j-between"
 											>
-												<span class="font-16">keys</span>
-												<i class="ri-arrow-right-s-line"></i>
+												<span class="text-black font-18 fw5"
+													>Withdraw History
+												</span>
 											</div>
-											<a
-												href="faq.html"
-												class="flex justify-content-between p-lr10 text-black b-r5 p-tb15 hover-bg-gray"
-											>
-												<span class="font-16">Faq</span>
-												<i class="ri-arrow-right-s-line"></i>
-											</a>
-											<a
-												href="#"
-												class="flex p-lr10 gap-2 align-items-center text-black b-r5 p-tb15 hover-bg-light-red"
-											>
-												<svg
-													width="18"
-													height="18"
-													viewBox="0 0 18 18"
-													fill="none"
-													xmlns="http://www.w3.org/2000/svg"
-												>
-													<path
-														fill-rule="evenodd"
-														clip-rule="evenodd"
-														d="M9.05549 12.302C9.03816 11.8421 8.65124 11.4833 8.19133 11.5007C7.73141 11.518 7.37266 11.9049 7.38999 12.3648C7.43016 13.4291 7.48716 14.2206 7.54516 14.8033C7.66724 16.0285 8.52141 17.0437 9.82691 17.2032C10.4346 17.2775 11.251 17.3334 12.3337 17.3334C13.4163 17.3334 14.2327 17.2775 14.8405 17.2032C16.146 17.0437 17.0001 16.0279 17.1221 14.8031C17.2295 13.7245 17.3337 11.9263 17.3337 9.00008C17.3337 6.07381 17.2295 4.27565 17.1221 3.19711C17.0001 1.97221 16.146 0.956531 14.8405 0.796931C14.2327 0.72264 13.4163 0.666748 12.3337 0.666748C11.251 0.666748 10.4346 0.72264 9.82691 0.796923C8.52141 0.956498 7.66724 1.97171 7.54516 3.19684C7.48716 3.77961 7.43016 4.57112 7.38999 5.63531C7.37266 6.09522 7.73141 6.48212 8.19133 6.49949C8.65124 6.51685 9.03816 6.15809 9.05549 5.69818C9.09466 4.66137 9.14958 3.90462 9.20366 3.36206C9.25691 2.82773 9.57949 2.50624 10.0291 2.45127C10.5593 2.38646 11.3072 2.33341 12.3337 2.33341C13.3601 2.33341 14.108 2.38646 14.6382 2.45128C15.0877 2.50621 15.4104 2.82786 15.4636 3.36231C15.5639 4.36942 15.667 6.1094 15.667 9.00008C15.667 11.8907 15.5639 13.6307 15.4636 14.6378C15.4104 15.1723 15.0877 15.4939 14.6382 15.5489C14.108 15.6137 13.3601 15.6667 12.3337 15.6667C11.3072 15.6667 10.5593 15.6137 10.0291 15.5489C9.57949 15.4939 9.25691 15.1724 9.20366 14.6381C9.14958 14.0955 9.09466 13.3388 9.05549 12.302ZM5.00625 12.506C5.33168 12.1806 5.33168 11.6529 5.00625 11.3275L3.51217 9.83342H11.5003C11.9606 9.83342 12.3337 9.46033 12.3337 9.00008C12.3337 8.53983 11.9606 8.16675 11.5003 8.16675H3.51217L5.00625 6.67267C5.33168 6.34723 5.33168 5.8196 5.00625 5.49416C4.68081 5.16872 4.15318 5.16872 3.82773 5.49416L0.911067 8.41083C0.585634 8.73625 0.585634 9.26392 0.911067 9.58933L3.82773 12.506C4.15318 12.8314 4.68081 12.8314 5.00625 12.506Z"
-														fill="#F7336F"
-													/>
-												</svg>
-												<span class="fw5 font-16">Log Out</span>
-											</a>
 										</div>
-										<!--end::Card body-->
+										<!--begin::Card body-->
+										<div class="card-body p-a0">
+											<div class="table-cont">
+												<div class="table-responsive">
+													<table
+														id="account-statement-table"
+														style="min-width: 1000px"
+													>
+														<thead>
+															<tr>
+																<th class="w110">Withdraw Id</th>
+																<th class="w50">Amount</th>
+																<th class="w50">Balance</th>
+																<th class="w110">method</th>
+																<th class="w150">Order Date</th>
+																<th class="w150 text-end pe-0">
+																	Withdraw date
+																</th>
+																<th class="min-w-100px text-end pe-0">
+																	Status
+																</th>
+																<th class="min-w-100px text-end pe-0">
+																	DETAILS
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="text-gray-2 font-14 p-tb20">
+																	#123467
+																</td>
+																<td class="font-14 p-tb20 text-gray-2">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	Bank name
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<div
+																		class="pendingStatus w110 statusBox h30 d-flex justify-content-center align-items-center br-4"
+																	>
+																		pending
+																	</div>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<a
+																		href="#"
+																		class="w90 h30 b-r4 text-white bg-primary d-flex align-items-center justify-content-center p-lr10 d-inline-block"
+																		data-bs-toggle="modal"
+																		data-bs-target="#details-modal-pending"
+																	>
+																		DETAILS
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-gray-2 font-14 p-tb20">
+																	#123467
+																</td>
+																<td class="font-14 p-tb20 text-gray-2">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	<span class="p-a10 b-r8">Bank name</span>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<div
+																		class="inProgresstatus w110 statusBox h30 d-flex justify-content-center align-items-center br-4"
+																	>
+																		in Progress
+																	</div>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<a
+																		href="#"
+																		class="w90 h30 b-r4 text-white bg-primary d-flex align-items-center justify-content-center p-lr10 d-inline-block"
+																		data-bs-toggle="modal"
+																		data-bs-target="#details-modal-progress"
+																	>
+																		DETAILS
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-gray-2 font-14 p-tb20">
+																	#123467
+																</td>
+																<td class="font-14 p-tb20 text-gray-2">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	<span class="p-a10 b-r8">Bank name</span>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<div
+																		class="completeStatus w110 statusBox h30 d-flex justify-content-center align-items-center br-4"
+																	>
+																		complete
+																	</div>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<a
+																		href="#"
+																		class="w90 h30 b-r4 text-white bg-primary d-flex align-items-center justify-content-center p-lr10 d-inline-block"
+																		data-bs-toggle="modal"
+																		data-bs-target="#details-modal-complete"
+																	>
+																		DETAILS
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td class="text-gray-2 font-14 p-tb20">
+																	#123467
+																</td>
+																<td class="font-14 p-tb20 text-gray-2">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	$710.68
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	<span class="p-a10 b-r8">Bank name</span>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	Aug 23, 22
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<div
+																		class="rejectedStatus w110 statusBox h30 d-flex justify-content-center align-items-center br-4"
+																	>
+																		rejected
+																	</div>
+																</td>
+																<td class="text-gray-2 font-14 p-tb20 text-end">
+																	<a
+																		href="#"
+																		class="w90 h30 b-r4 text-white bg-primary d-flex align-items-center justify-content-center p-lr10 d-inline-block"
+																		data-bs-toggle="modal"
+																		data-bs-target="#details-modal-rejected"
+																	>
+																		DETAILS
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
 									</div>
+									<div class="table-footer m-t20"></div>
+									<!--end::Card-->
 								</div>
 							</div>
-							<!--end::row-->
 						</div>
 					</div>
+					<!--end::Col-->
 				</div>
 			</div>
 		</main>
@@ -697,59 +760,7 @@
 			</div>
 		</footer>
 		<!--end::footer-->
-		<div class="modal fade" tabindex="-1" id="modal-keys">
-			<div class="modal-dialog modal-dialog-centered max-w450">
-				<div class="modal-content">
-					<div class="modal-body p-a30">
-						<p class="fw5 font-18 text-black m-b30">keys</p>
-						<div class="m-b10">
-							<label class="form-label fs-6 text-dark text-capitalize"
-								>Secret key</label
-							>
-							<div class="relative">
-								<input
-									class="form-control place-14 h45 input-shadow font-14 form-control-lg"
-									type="number"
-									name="secretKey"
-									placeholder="secret key"
-									value="16512899128161"
-									required
-								/>
-								<button
-									type="button"
-									class="btn copyButton position-absolute end-0 top-50 m-r5 translate-middle-y"
-									data-input="secretKey"
-								>
-									copy
-								</button>
-							</div>
-						</div>
-						<div class="m-b10">
-							<label class="form-label fs-6 text-dark text-capitalize"
-								>clint key</label
-							>
-							<div class="relative">
-								<input
-									class="form-control place-14 h45 input-shadow font-14 form-control-lg"
-									type="number"
-									name="clintKey"
-									placeholder="clint key"
-									value="16512899128161"
-									required
-								/>
-								<button
-									type="button"
-									class="btn copyButton position-absolute end-0 top-50 m-r5 translate-middle-y"
-									data-input="clintKey"
-								>
-									copy
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<!--begin::overlay-->
 		<div class="overlay"></div>
 		<!--end::overlay-->
@@ -760,27 +771,486 @@
 			</div>
 		</div>
 		<!--end::preloader-->
+		<!--begin::modals-->
+		<div class="modal fade" tabindex="-1" id="details-modal-pending">
+			<div class="modal-dialog modal-dialog-centered max-w450">
+				<div class="modal-content">
+					<div class="modal-body p-0">
+						<div class="flex flex-center j-center p-a30">
+							<div class="hidden active scaleIn durations1" id="step-1">
+								<h5 class="modal-title text-center p-b20">Withdraw DETAILS</h5>
+								<div class="flex flex-center j-center">
+									<div class="invoice">
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Invoice Id</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>#123467</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Withdraw with Bank
+											</span>
+											<span class="font-14 text-black text-capitalize"
+												>Bank Name</span
+											>
+										</div>
+										<div class="flex j-between flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Owner</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>Owner</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Swift Code</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>AAAA-BB-CC-123</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Amount</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>275$</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center">
+											<span class="font-14 span-gray">Fee</span>
+											<span class="font-14 text-black cut-text-1">0$</span>
+										</div>
+										<span class="dis-block m-tb30 line"></span>
+										<div class="flex j-between flex-center">
+											<span class="font-14 text-black">Total</span>
+											<span class="font-16 text-black fw8">275.5$</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden scaleIn durations1" id="step-2">
+								<div class="flex flex-center flex-column j-center">
+									<img
+										src="../assets/images/successfully-withdraw.png"
+										class="w200 h200 img-fit-contain"
+										alt=""
+									/>
+									<span class="text-black text-center fw5 font-18 m-tb10"
+										>Successfully Withdraw</span
+									>
+									<span class="span-gray text-center font-14 m-b15"
+										>Thanks for using rech2pay services</span
+									>
+								</div>
+								<div class="flex j-between gap-5 flex-center m-b20">
+									<span class="font-14 span-gray">withdrawal amount</span>
+									<span class="font-14 text-black">100$</span>
+								</div>
+								<!--begin::Actions-->
+								<div class="text-center">
+									<a
+										href="#"
+										class="btn btn-lg p-lr50 m-tb10 mx-auto theme-btn font-15"
+										style="width: fit-content"
+									>
+										<span></span>
+										Back to home
+									</a>
+								</div>
+								<!--end::Actions-->
+							</div>
+						</div>
+						<div class="pendingStatus m-b50 p-tb15 text-center">
+							in progress
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" tabindex="-1" id="details-modal-progress">
+			<div class="modal-dialog modal-dialog-centered max-w450">
+				<div class="modal-content">
+					<div class="modal-body p-0">
+						<div class="flex flex-center j-center p-a30">
+							<div class="hidden active scaleIn durations1" id="step-1">
+								<h5 class="modal-title text-center p-b20">Withdraw DETAILS</h5>
+								<div class="flex flex-center j-center">
+									<div class="invoice">
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Invoice Id</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>#123467</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Withdraw with Bank
+											</span>
+											<span class="font-14 text-black text-capitalize"
+												>Bank Name</span
+											>
+										</div>
+										<div class="flex j-between flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Owner</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>Owner</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Swift Code</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>AAAA-BB-CC-123</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>IBAN</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>GB 12 ABCD 102030 12345678</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Amount</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>275$</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center">
+											<span class="font-14 span-gray">in progress</span>
+											<span class="font-14 text-black cut-text-1">0$</span>
+										</div>
+										<span class="dis-block m-tb30 line"></span>
+										<div class="flex j-between flex-center">
+											<span class="font-14 text-black">Total</span>
+											<span class="font-16 text-black fw8">275.5$</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden scaleIn durations1" id="step-2">
+								<div class="flex flex-center flex-column j-center">
+									<img
+										src="../assets/images/successfully-withdraw.png"
+										class="w200 h200 img-fit-contain"
+										alt=""
+									/>
+									<span class="text-black text-center fw5 font-18 m-tb10"
+										>Successfully Withdraw</span
+									>
+									<span class="span-gray text-center font-14 m-b15"
+										>Thanks for using rech2pay services</span
+									>
+								</div>
+								<div class="flex j-between gap-5 flex-center m-b20">
+									<span class="font-14 span-gray">withdrawal amount</span>
+									<span class="font-14 text-black">100$</span>
+								</div>
+								<!--begin::Actions-->
+								<div class="text-center">
+									<a
+										href="#"
+										class="btn btn-lg p-lr50 m-tb10 mx-auto theme-btn font-15"
+										style="width: fit-content"
+									>
+										<span></span>
+										Back to home
+									</a>
+								</div>
+								<!--end::Actions-->
+							</div>
+						</div>
+						<div class="inProgresstatus m-b50 p-tb15 text-center">
+							in progress
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" tabindex="-1" id="details-modal-rejected">
+			<div class="modal-dialog modal-dialog-centered max-w450">
+				<div class="modal-content">
+					<div class="modal-body p-0">
+						<div class="flex flex-center j-center p-a30">
+							<div class="hidden active scaleIn durations1" id="step-1">
+								<h5 class="modal-title text-center p-b20">Withdraw DETAILS</h5>
+								<div class="flex flex-center j-center">
+									<div class="invoice">
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Invoice Id</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>#123467</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Withdraw with Bank
+											</span>
+											<span class="font-14 text-black text-capitalize"
+												>Bank Name</span
+											>
+										</div>
+										<div class="flex j-between flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Owner</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>Owner</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Swift Code</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>AAAA-BB-CC-123</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>IBAN</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>GB 12 ABCD 102030 12345678</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Amount</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>275$</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center">
+											<span class="font-14 span-gray">in progress</span>
+											<span class="font-14 text-black cut-text-1">0$</span>
+										</div>
+										<span class="dis-block m-tb30 line"></span>
+										<div class="flex j-between flex-center">
+											<span class="font-14 text-black">Total</span>
+											<span class="font-16 text-black fw8">275.5$</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden scaleIn durations1" id="step-2">
+								<div class="flex flex-center flex-column j-center">
+									<img
+										src="../assets/images/successfully-withdraw.png"
+										class="w200 h200 img-fit-contain"
+										alt=""
+									/>
+									<span class="text-black text-center fw5 font-18 m-tb10"
+										>Successfully Withdraw</span
+									>
+									<span class="span-gray text-center font-14 m-b15"
+										>Thanks for using rech2pay services</span
+									>
+								</div>
+								<div class="flex j-between gap-5 flex-center m-b20">
+									<span class="font-14 span-gray">withdrawal amount</span>
+									<span class="font-14 text-black">100$</span>
+								</div>
+								<!--begin::Actions-->
+								<div class="text-center">
+									<a
+										href="#"
+										class="btn btn-lg p-lr50 m-tb10 mx-auto theme-btn font-15"
+										style="width: fit-content"
+									>
+										<span></span>
+										Back to home
+									</a>
+								</div>
+								<!--end::Actions-->
+							</div>
+						</div>
+						<div
+							class="rejectedStatus m-b20 p-tb15 text-center text-capitalize"
+						>
+							rejected
+						</div>
+						<div class="p-lr30">
+							<div
+								class="w-100 m-t15 b-r8 border d-flex flex-column p-lr10 d-flex p-t10 b-r10 m-b50"
+							>
+								<p class="m-t10 fw5 text-capitalize text-black">reason for refused Withdraw</p>
+								<p>
+									the reason for refused Withdraw the reason for refused
+									Withdraw the reason for refused Withdraw the reason for
+									refused Withdraw
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" tabindex="-1" id="details-modal-complete">
+			<div class="modal-dialog modal-dialog-centered max-w450">
+				<div class="modal-content">
+					<div class="modal-body p-0">
+						<div class="flex flex-center j-center p-a30">
+							<div class="hidden active scaleIn durations1" id="step-1">
+								<h5 class="modal-title text-center p-b20">Withdraw DETAILS</h5>
+								<div class="flex flex-center j-center">
+									<div class="invoice">
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Invoice Id</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>#123467</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Withdraw with Bank
+											</span>
+											<span class="font-14 text-black text-capitalize"
+												>Bank Name</span
+											>
+										</div>
+										<div class="flex j-between flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Owner</span
+											>
+											<span class="font-14 text-black text-capitalize"
+												>Owner</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Swift Code</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>AAAA-BB-CC-123</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>IBAN</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>GB 12 ABCD 102030 12345678</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center m-b20">
+											<span class="font-14 span-gray text-capitalize"
+												>Amount</span
+											>
+											<span
+												class="font-14 text-black cut-text-1 text-capitalize"
+												>275$</span
+											>
+										</div>
+										<div class="flex j-between gap-5 flex-center">
+											<span class="font-14 span-gray">in progress</span>
+											<span class="font-14 text-black cut-text-1">0$</span>
+										</div>
+										<span class="dis-block m-tb30 line"></span>
+										<div class="flex j-between flex-center">
+											<span class="font-14 text-black">Total</span>
+											<span class="font-16 text-black fw8">275.5$</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden scaleIn durations1" id="step-2">
+								<div class="flex flex-center flex-column j-center">
+									<img
+										src="../assets/images/successfully-withdraw.png"
+										class="w200 h200 img-fit-contain"
+										alt=""
+									/>
+									<span class="text-black text-center fw5 font-18 m-tb10"
+										>Successfully Withdraw</span
+									>
+									<span class="span-gray text-center font-14 m-b15"
+										>Thanks for using rech2pay services</span
+									>
+								</div>
+								<div class="flex j-between gap-5 flex-center m-b20">
+									<span class="font-14 span-gray">withdrawal amount</span>
+									<span class="font-14 text-black">100$</span>
+								</div>
+								<!--begin::Actions-->
+								<div class="text-center">
+									<a
+										href="#"
+										class="btn btn-lg p-lr50 m-tb10 mx-auto theme-btn font-15"
+										style="width: fit-content"
+									>
+										<span></span>
+										Back to home
+									</a>
+								</div>
+								<!--end::Actions-->
+							</div>
+						</div>
+						<div
+							class="completeStatus m-b20 p-tb15 text-center text-capitalize"
+						>
+							complete
+						</div>
+						<div class="p-lr30">
+							<p class="font-14 m-b10">transfer image</p>
+							<div
+								class="w80 h80 d-flex justify-content-center align-items-center border-2 rounded-2"
+							>
+								<img
+									class="w60 h70"
+									src="../assets/images/transfer-image.png"
+									alt="transfer-image"
+								/>
+							</div>
+							<p class="font-14 m-t10">rejected</p>
 
+							<div
+								class="w-100 h42 bg-gray p-lr10 d-flex p-t10 b-r10 align-items-center m-b50"
+							>
+								#123467
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--begin::scripts-->
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../../assets/js/jquery.min.js"></script>
 		<script src="../assets/js/scripts.bundle.js"></script>
-		<script src="../assets/js/apexcharts.min.js"></script>
-		<script src="../assets/js/charts.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../../assets/js/datatables.bundle.js"></script>
 		<script>
-			const copyButtons = document.querySelectorAll(".copyButton");
-
-			copyButtons.forEach((button) => {
-				button.addEventListener("click", () => {
-					const inputName = button.getAttribute("data-input");
-					const input = document.querySelector(`[name="${inputName}"]`);
-
-					if (input) {
-						input.select();
-						document.execCommand("copy");
-					}
-				});
+			$(document).ready(function () {
+				$("#account-statement-table").DataTable();
 			});
 		</script>
 	</body>

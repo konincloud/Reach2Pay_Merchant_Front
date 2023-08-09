@@ -5679,3 +5679,41 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .dropdownWithdraw::after {
 	content: none;
 }
+
+.statusBox {
+	border-radius: 6px;
+	padding: 5px 15px;
+}
+
+.pendingStatus {
+	background-color: rgba(255, 170, 0, 0.1);
+	color: #ffa800;
+}
+.inProgresstatus {
+	background-color: #e6f6fe;
+	color: #00a2f8;
+}
+.completeStatus {
+	background-color: rgba(70, 203, 154, 0.1);
+	color: #46cb9b;
+}
+.rejectedStatus {
+	background-color: rgba(216, 25, 35, 0.1);
+	color: #d81923;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+input[type="number"] {
+  /* Firefox */
+  -moz-appearance: textfield;
+  /* Webkit (Safari/Chrome) */
+  -webkit-appearance: none;
+}
+
+/* For modern browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
