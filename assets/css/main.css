@@ -5705,15 +5705,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 	cursor: pointer;
 }
 input[type="number"] {
-  /* Firefox */
-  -moz-appearance: textfield;
-  /* Webkit (Safari/Chrome) */
-  -webkit-appearance: none;
+	/* Firefox */
+	-moz-appearance: textfield;
+	/* Webkit (Safari/Chrome) */
+	-webkit-appearance: none;
 }
 
 /* For modern browsers */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.bannerSwiper {
+	height: 202px !important;
+	border-radius: 16px !important;
+	overflow: hidden;
+	width: 95% !important;
 }

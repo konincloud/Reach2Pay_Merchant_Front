@@ -6,6 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/components/prop.css" />
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
 		<!-- <link rel="stylesheet" href="../assets/css/components/prop-rtl.css"> -->
 		<title>Home</title>
 	</head>
@@ -569,7 +574,7 @@
 							<div class="row">
 								<div class="col-lg-c60 col-md-12 mb-4">
 									<div
-										class="card card-border overflow-hidden h-md-100 p-b50 scaleIn durations1"
+										class="card card-border overflow-hidden h-md-100 scaleIn durations1"
 									>
 										<!--begin::Card body-->
 										<div
@@ -917,8 +922,32 @@
 												</div>
 											</div>
 										</div>
-
 										<!--end::Card body-->
+										<!-- Swiper -->
+										<div
+											class="swiper bannerSwiper position-relative h-100 m-tb30"
+										>
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div>
+														<img
+															class="w-100 h-100 b-r16"
+															src="../assets/images/banner-1.webp"
+															alt="bannerImg"
+														/>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div>
+														<img
+															class="w-100 h-100 b-r16"
+															src="../assets/images/banner-1.webp"
+															alt="bannerImg"
+														/>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<!--begin::Col-->
@@ -1984,6 +2013,8 @@
 		<script src="../assets/js/charts.js"></script>
 		<script src="../assets/js/main.js"></script>
 		<script src="../assets/js/toastr.min.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script>
 			// on load window toast
 			$(window).on("load", function () {
@@ -2004,6 +2035,12 @@
 					showMethod: "fadeIn",
 					hideMethod: "fadeOut",
 				});
+			});
+			let bannerSwiper = new Swiper(".bannerSwiper", {
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
 			});
 		</script>
 	</body>
