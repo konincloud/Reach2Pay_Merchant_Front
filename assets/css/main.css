@@ -5724,3 +5724,8 @@ input[type="number"]::-webkit-outer-spin-button {
 	overflow: hidden;
 	width: 95% !important;
 }
+
+.qrcode {
+	width: 418px;
+	height: 418px;
+}
