@@ -233,7 +233,22 @@
 							</div>
 						</div>
 						<div class="tableBox text-21 m-b40">
-							<div class="tableBox__head">
+							<div class="tableBox__head position-relative">
+								<button
+									class="border-0 bg-transparent copyBtn m-r10 position-absolute end-0 top-50 translate-middle-y"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										fill="#000"
+										viewBox="0 0 256 256"
+									>
+										<path
+											d="M184,64H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V72A8,8,0,0,0,184,64Zm-8,144H48V80H176ZM224,40V184a8,8,0,0,1-16,0V48H72a8,8,0,0,1,0-16H216A8,8,0,0,1,224,40Z"
+										></path>
+									</svg>
+								</button>
 								<p class="mb-0">Request Body Sample</p>
 							</div>
 							<div class="tableBox__body">
@@ -262,7 +277,22 @@
 							</div>
 						</div>
 						<div class="tableBox text-21 m-b40">
-							<div class="tableBox__head">
+							<div class="tableBox__head position-relative">
+								<button
+									class="border-0 bg-transparent copyBtn m-r10 position-absolute end-0 top-50 translate-middle-y"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										fill="#000"
+										viewBox="0 0 256 256"
+									>
+										<path
+											d="M184,64H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V72A8,8,0,0,0,184,64Zm-8,144H48V80H176ZM224,40V184a8,8,0,0,1-16,0V48H72a8,8,0,0,1,0-16H216A8,8,0,0,1,224,40Z"
+										></path>
+									</svg>
+								</button>
 								<p class="mb-0">Response Sample</p>
 							</div>
 							<div class="tableBox__body">
@@ -333,5 +363,45 @@
 		<script src="../assets/js/scripts.bundle.js"></script>
 		<script src="../assets/js/bootstrap.min.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script>
+			// Get all the copy buttons and pre elements
+			const copyButtons = document.querySelectorAll(".copyBtn");
+			const preElements = document.querySelectorAll("pre");
+
+			// Add a click event listener to each copy button
+			copyButtons.forEach((button, index) => {
+				button.addEventListener("click", () => {
+					// Create a text area element to temporarily hold the code
+					const textArea = document.createElement("textarea");
+					textArea.value = preElements[index].textContent;
+
+					// Append the text area to the document
+					document.body.appendChild(textArea);
+
+					// Select the text in the text area
+					textArea.select();
+
+					// Copy the selected text to the clipboard
+					document.execCommand("copy");
+
+					// Remove the text area from the document
+					document.body.removeChild(textArea);
+
+					// Show a toast notification
+					showToast("Code copied to clipboard");
+				});
+			});
+
+			// Function to display a toast notification at the bottom of the page
+			function showToast(message) {
+				const toast = document.createElement("div");
+				toast.className = "toast show";
+				toast.textContent = message;
+				document.body.appendChild(toast);
+				setTimeout(() => {
+					document.body.removeChild(toast);
+				}, 3000);
+			}
+		</script>
 	</body>
 </html>
