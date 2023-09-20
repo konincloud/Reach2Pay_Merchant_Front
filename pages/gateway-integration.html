@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/components/prop.css" />
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<!-- <link rel="stylesheet" href="../assets/css/components/prop-rtl.css"> -->
+		<title>Home</title>
+	</head>
+	<body>
+		<nav class="navGatewayIntegration container d-flex flex-column gap-3">
+			<img
+				src="../assets/images/gateway-integration.png"
+				class="gateway-integration-img mx-auto"
+				alt="gateway-integration"
+			/>
+			<h1
+				class="fontFamilt-poppins text-center font-30 fw5 mb-0 mx-auto navGatewayIntegration__title text-21"
+			>
+				Reach2pay Gateway Integration
+			</h1>
+		</nav>
+		<main class="container">
+			<section>
+				<ul
+					class="nav nav-pills mb-3 docsStepPills"
+					id="docsStepPills-tab"
+					role="tablist"
+				>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link docsStepPillsBtn font-20 fw5 active"
+							id="docsStepPills-stepOne-tab"
+							data-bs-toggle="pill"
+							data-bs-target="#docsStepPills-stepOne"
+							type="button"
+							role="tab"
+							aria-controls="docsStepPills-stepOne"
+							aria-selected="true"
+						>
+							Step 1
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							class="nav-link docsStepPillsBtn font-20 fw5"
+							id="docsStepPills-stepTwo-tab"
+							data-bs-toggle="pill"
+							data-bs-target="#docsStepPills-stepTwo"
+							type="button"
+							role="tab"
+							aria-controls="docsStepPills-stepTwo"
+							aria-selected="false"
+						>
+							step 2
+						</button>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div class="tab-content" id="docsStepPills-tabContent">
+					<div
+						class="tab-pane fade show active"
+						id="docsStepPills-stepOne"
+						role="tabpanel"
+						aria-labelledby="docsStepPills-stepOne-tab"
+						tabindex="0"
+					>
+						<p class="text-main font-28 fw5 m-b40">Prerequisites</p>
+						<div class="tableBox text-21 m-b40">
+							<div class="tableBox__head">
+								<p class="mb-0">
+									Your login credentials will be provided to you when you are
+									successfully boarded onto the gateway.
+								</p>
+							</div>
+							<div class="tableBox__body">
+								<p class="m-b10">
+									To make succcessful API requests, you need to generate an API
+									password:
+								</p>
+								<div class="m-l40">
+									<p class="mb-0">
+										Log in to
+										<a href="#" class="text-main">
+											https://epayment.areeba.com/ma
+										</a>
+										with your login credentials.
+									</p>
+									<p class="mb-0">
+										Navigate to <b>Admin</b> > <b>Integration Settings</b> >
+										<b>Edit</b>.
+									</p>
+									<p class="mb-0">
+										Click Generate New, and select the Enable Integration Access
+										Via Password box.
+									</p>
+									<p class="mb-0">
+										This is the API password you will use to authenticate API
+										requests made from your web server to the gateway.
+									</p>
+									<p class="mb-0">Click <b>Submit</b>.</p>
+								</div>
+								<p class="m-tb20">
+									You must always have at least one password generated and
+									enabled but you may have up to two passwords set up. For
+									security, you should change the password periodically. Only
+									one password must be used for configuring your application,
+									the second one working as a standby for password rolling
+									purposes.
+								</p>
+								<p class="mb-0">
+									It is recommended that you opt for the Notifications service
+									to receive notifications (email/Webhook) if the payment is
+									successful. The gateway (on behalf of you) can also send email
+									notifications to the payer.
+								</p>
+							</div>
+						</div>
+						<p class="text-main font-28 fw5 m-b40">Credit Card</p>
+						<div class="tableBox text-21 m-b40">
+							<div class="tableBox__head">
+								<p class="mb-0">
+									Use the below test card to test your integration.
+								</p>
+							</div>
+							<div class="tableBox__body">
+								<div
+									class="d-flex flex-column flex-md-row align-items-md-center m-b15"
+								>
+									<p class="mb-0 m-b5 mb-sm-0 tableBox__body--title">
+										Card Number:
+									</p>
+									<p class="mb-0 text-54">5123 4500 0000 0008</p>
+								</div>
+								<div
+									class="d-flex flex-column flex-md-row align-items-md-center m-b15"
+								>
+									<p class="mb-0 m-b5 mb-sm-0 tableBox__body--title">
+										Expiry Date:
+									</p>
+									<p class="mb-0 text-54">01/39</p>
+								</div>
+								<div
+									class="d-flex flex-column flex-md-row align-items-md-center m-b15"
+								>
+									<p class="mb-0 m-b5 mb-sm-0 tableBox__body--title">
+										Security Code:
+									</p>
+									<p class="mb-0 text-54">123</p>
+								</div>
+								<div
+									class="d-flex flex-column flex-md-row align-items-md-center"
+								>
+									<p class="mb-0 m-b5 mb-sm-0 tableBox__body--title">
+										Cardholder Name:
+									</p>
+									<p class="mb-0 text-54">test</p>
+								</div>
+							</div>
+						</div>
+						<p class="m-b30 text-center text-sm-start">
+							24/7 Merchant Support - For any inquiries, our 24/7 help desk team
+							is ready to assist you.
+						</p>
+						<p class="m-b30 text-center text-sm-start">
+							Call us on <b class="text-main">1557</b> or
+							<b class="text-main">01 954 333</b>
+						</p>
+						<p class="mb-0 text-center text-sm-start">
+							Email on
+							<a href="mailto:onlinepayment@Reach2pay.com">
+								<b class="text-main">onlinepayment@Reach2pay.com</b>
+							</a>
+						</p>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="docsStepPills-stepTwo"
+						role="tabpanel"
+						aria-labelledby="docsStepPills-stepTwo-tab"
+						tabindex="0"
+					>
+						<p class="text-main font-28 fw5 m-b40">
+							Initiate a Checkout Session
+						</p>
+						<div class="tableBox text-21 m-b40">
+							<div class="tableBox__head">
+								<div
+									class="d-flex align-items-sm-center gap-3 align-items-center"
+								>
+									<p class="mb-0 text-uppercase">POST</p>
+									<p class="mb-0 tableBox__head--subtitle">
+										https://epayment.Reach2pay.com/api/rest/version/72/merchant/{YOUR_MERCHANT_ID}/session
+									</p>
+								</div>
+							</div>
+							<div class="tableBox__body">
+								<p class="mb-0">
+									Requests to the Transaction API are sent via HTTPS containing
+									a JSON body.
+								</p>
+								<p class="mb-1">Authentication</p>
+								<p class="mb-1">
+									The API username and password must be sent as BASIC
+									Authentication in the Authorization header (refer to RFC
+									7617).
+								</p>
+								<p class="mb-1">
+									Username and password are concatenated by a : (colon) and the
+									whole string is Base64 encoded.
+								</p>
+								<p class="mb-1 p-l10 overflow-x-auto">
+									• Username is merchant.anyMerchantID, password is myPassword
+								</p>
+								<p class="mb-1 p-l10 overflow-x-auto">
+									• Concatenation is merchant.anyMerchantID:myPassword
+								</p>
+								<p class="mb-1 p-l10 overflow-x-auto">
+									• Base64 encoded: bWVyY2hhbnQuYW55TWVyY2hhbnRJRDpteVBhc3N3b3Jk
+								</p>
+								<p class="mb-1 p-l10 overflow-x-auto">
+									• The passed header will then look like this: Authorization:
+									Basic bWVyY2hhbnQuYW55TWVyY2hhbnRJRDpteVBhc3N3b3Jk
+								</p>
+							</div>
+						</div>
+						<div class="tableBox text-21 m-b40">
+							<div class="tableBox__head">
+								<p class="mb-0">Request Body Sample</p>
+							</div>
+							<div class="tableBox__body">
+								<pre class="mb-0">
+{
+  "apiOperation": "INITIATE_CHECKOUT",
+  "interaction": {
+    "operation": "PURCHASE",
+    "merchant": {
+      "name": "Your merchant name",
+      "address": {
+        "line1": "200 Sample St",
+        "line2": "1234 Example Town"
+      }
+    },
+    "order": {
+      "currency": "USD",
+      "id": "{UNIQUE_ORDER_ID}",
+      "amount": 5,
+      "description": "ordered goods"
+    }
+  }
+}
+                  </pre
+								>
+							</div>
+						</div>
+						<div class="tableBox text-21 m-b40">
+							<div class="tableBox__head">
+								<p class="mb-0">Response Sample</p>
+							</div>
+							<div class="tableBox__body">
+								<pre class="mb-0">
+{
+  "apiOperation": "INITIATE_CHECKOUT",
+  "interaction": {
+    "operation": "PURCHASE",
+    "merchant": {
+      "name": "Your merchant name",
+      "address": {
+        "line1": "200 Sample St",
+        "line2": "1234 Example Town"
+      }
+    },
+    "order": {
+      "currency": "USD",
+      "id": "{UNIQUE_ORDER_ID}",
+      "amount": 5,
+      "description": "ordered goods"
+    }
+  }
+}
+                  </pre
+								>
+							</div>
+						</div>
+						<p class="m-b30 text-center text-sm-start">
+							24/7 Merchant Support - For any inquiries, our 24/7 help desk team
+							is ready to assist you.
+						</p>
+						<p class="m-b30 text-center text-sm-start">
+							Call us on <b class="text-main">1557</b> or
+							<b class="text-main">01 954 333</b>
+						</p>
+						<p class="mb-0 text-center text-sm-start">
+							Email on
+							<a href="mailto:onlinepayment@Reach2pay.com">
+								<b class="text-main">onlinepayment@Reach2pay.com</b>
+							</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="container text-center p-tb20 m-t20">
+			<p class="mb-0">
+				All rights reserved
+				<a href="https://www.reach2pay.com" target="_blank"
+					><b class="text-main">Reach2pay.com</b></a
+				>
+			</p>
+		</footer>
+
+		<!--begin::overlay-->
+		<div class="overlay"></div>
+		<!--end::overlay-->
+		<!--begin::preloader-->
+		<div class="preloader">
+			<div class="preloader-inner">
+				<img src="../assets/images/logo.png" alt="Reach2Pay" />
+			</div>
+		</div>
+		<!--end::preloader-->
+		<!--begin::scripts-->
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/scripts.bundle.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
